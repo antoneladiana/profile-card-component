@@ -1,0 +1,115 @@
+/* -------------------- COLOR PALETTE ----------------------- */
+/* 
+    https://coolors.co/19a2ae-2d3248-6a6f81-969696
+
+                    #19A2AE Viridian Green 
+                    #2D3248 Space Cadet 
+                    #6A6F81 Rhythm 
+                    #969696 Spanish Gray 
+*/
+
+/* ----------------------- GLOBAL --------------------------- */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    color: #6A6F81;
+    background-color: #19A2AE;
+    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    font: 18px 'Kumbh Sans', sans-serif;
+}
+
+
+/* ----------------------- MAIN ----------------------------- */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+article {
+    background: url(../images/bg-pattern-card.svg);
+    border-radius: 15px;
+    width: 360px;
+    height: 390px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);;
+}
+h3 {
+    padding-right: 10px;
+}
+h3, dd {
+    color: #2D3248;
+    font-weight: 700;
+}
+dt {
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    padding-top: 10px;
+}
+.location {
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.profile-info {
+    border-radius: 0 0 15px 15px;
+    background: #FFFFFF;
+}
+.personal-info {
+    border-bottom: 1px solid rgba(150, 150, 150, 0.2);
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+}
+.main-info {
+    display: flex;
+    justify-content: center;
+}
+.stats {
+    display: flex;
+    padding: 25px 20px;
+}
+.stats-item {
+    flex: 0 1 120px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.profile-picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50px;
+}
+img {
+    border-radius: 50%;
+    width: 101px;
+    z-index: 100;
+    border: 5px solid #FFFFFF;
+}
+
+/* ----------------------- FOOTER --------------------------- */
+footer {
+    font-size: 11px;
+    text-align: center;
+    color: #FFFFFF;
+}
+footer a {
+    color: #3E52A3;
+}
+footer a:hover {
+    text-decoration: none;
+}
+
+
+/**************************************************************/
+/********************** MEDIA QUERIES *************************/
+/**************************************************************/

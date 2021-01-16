@@ -1,38 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Title -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Profile card component</title>
+  <title>Frontend Mentor | Profile Card Component</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="styles.css">
-
-  <!-- Attribution -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
+
+
 <body>
-  Victor Crest
-  26
-  London
 
-  80K
-  Followers
+  <main>
+    <article class="profile-card">
+        <div class="profile-picture">
+          <img src="./images/image-victor.jpg" alt="Profile picture." width="96" height="96">
+        </div>
+        <div class="profile-info">
+          <div class="personal-info">
+            <div class="main-info">
+              <h3 class="name">Victor Crest</h3>
+              <p class="age">26</p>
+            </div>
+            <p class="location">London</p>
+          </div>
+          <dl class="stats">
+            <div class="stats-item">
+              <dt>Followers</dt>
+              <dd>80K</dd>
+            </div>
+            <div class="stats-item">
+              <dt>Likes</dt>
+              <dd>803K</dd>
+            </div>
+            <div class="stats-item">
+              <dt>Photos</dt>
+              <dd>1.4K</dd>
+            </div>
+          </dl>
+        </div>
+    </article>
+  </main>
 
-  803K
-  Likes
+  <footer>
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by Antonela Diana.</p>
+  </footer>
 
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by Antonela Diana.
-  </div>
 </body>
 </html>
