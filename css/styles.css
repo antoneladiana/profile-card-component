@@ -18,8 +18,8 @@ html {
 body {
     color: #6A6F81;
     background-color: #19A2AE;
-    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
-    background-position: left top, right bottom;
+    background-image: url("../images/bg-pattern-top.svg") , url("../images/bg-pattern-bottom.svg");
+    background-position: -50% 180%, 130% -140%;
     background-repeat: no-repeat, no-repeat;
     font: 18px 'Kumbh Sans', sans-serif;
 }
@@ -35,13 +35,20 @@ main {
 article {
     background: url(../images/bg-pattern-card.svg);
     border-radius: 15px;
-    width: 360px;
+    max-width:360px;
+    width: 85%;
     height: 390px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);;
+}
+img {
+    border-radius: 50%;
+    width: 101px;
+    z-index: 100;
+    border: 5px solid #FFFFFF;
 }
 h3 {
     padding-right: 10px;
@@ -89,12 +96,7 @@ dt {
     align-items: center;
     height: 50px;
 }
-img {
-    border-radius: 50%;
-    width: 101px;
-    z-index: 100;
-    border: 5px solid #FFFFFF;
-}
+
 
 /* ----------------------- FOOTER --------------------------- */
 footer {
@@ -108,8 +110,3 @@ footer a {
 footer a:hover {
     text-decoration: none;
 }
-
-
-/**************************************************************/
-/********************** MEDIA QUERIES *************************/
-/**************************************************************/
