@@ -19,7 +19,8 @@ body {
     color: #6A6F81;
     background-color: #19A2AE;
     background-image: url("../images/bg-pattern-top.svg") , url("../images/bg-pattern-bottom.svg");
-    background-position: -50% 180%, 130% -140%;
+    background-position: bottom left, top right;
+    background-size: cover;
     background-repeat: no-repeat, no-repeat;
     font: 18px 'Kumbh Sans', sans-serif;
 }
@@ -30,7 +31,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    margin-top: 50px;
 }
 article {
     background: url(../images/bg-pattern-card.svg);
@@ -103,10 +104,18 @@ footer {
     font-size: 11px;
     text-align: center;
     color: #FFFFFF;
+    margin: 20px 0 10px 0;
 }
 footer a {
     color: #3E52A3;
 }
 footer a:hover {
     text-decoration: none;
+}
+
+/* ----------------------- FOOTER --------------------------- */
+@media screen and (min-width: 500px) {
+    main {
+        margin-top: 150px;
+    }
 }
